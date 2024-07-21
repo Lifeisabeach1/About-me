@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
-    
 }
 
 html {
@@ -16,33 +14,25 @@ body {
     background: url("animations/beach.jpg");
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 85%;
+    width: 100%;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 header .navbar {
     display: flex;
-    text-align: center;
-    max-width: 100px;
-    margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
 }
-
-
-
-
 
 .navbar .menu-links {
     display: flex;
     gap: 40px;
-    margin-top: 20px;
-
 }
 
 .navbar a {
@@ -55,105 +45,63 @@ header .navbar {
     color: aquamarine;
 }
 
-
-
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin-left: 50px;
-    
+.top-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-
-#myVideo {
+img, #myVideo {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    margin-left: 50px;
-    margin-top: 35px
 }
 
 button {
     background-color: rgb(118, 146, 118);
     color: white;
-    font-family: sans serif;
-    margin-bottom: 30px;
-    margin-left: 100px;
+    font-family: sans-serif;
     border-radius: 50px;
     padding: 10px;
     cursor: pointer;
 }
-   
 
-#aboutme,
-#hobbies,
-#goals,
-#contacts {
-    height: 700px;
+ul {
+    list-style-type: none;
+    padding-top: 3px;
+  }
+
+
+
+.container {
+    margin-top: 300px;
+    max-width: 800px;
+    width: 90%;
     text-align: center;
     color: whitesmoke;
-    
 }
 
-.contacts {
-    margin: 30px;
-    color: whitesmoke; 
-}
-
-.adress {
-    margin-left: 120px;
-}
-
-.telefon {
-    margin-left: 5px;
-}
-
-.email {
-    margin-left: 57px;
-}
-
-
-.about-me {
-  padding-left: 460px;
-  padding-right: 460px;
-}
-
-.skills {
-    padding-top: 10px;  
-}
-
-.css {
-    padding-right: 17px;
-    padding-top: 3px;
-}
-
-.javascript {
-    margin-left: 28px;
-    padding-top: 3px;
-}
-
-.react {
-    padding-top: 3px;
-}
-
-.node {
-    padding-top: 3px;
-}
-
-
-.professional-background {
-    
-    padding-left: 350px;
-    padding-right: 350px;
-}
-
-h2 {
+.container, h2, h3 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.programming {
-    padding-left: 400px;
-    padding-right: 400px;
+
+
+.container p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
 }
